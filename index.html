@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Site domain — update all "https://speed-reader.pro" references when domain changes -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Reader — Read Faster on macOS</title>
+    <meta name="description" content="Speed reading app for macOS with RSVP technique, notch widget, and multi-format support. Read articles, books, and documents 2-5x faster.">
+    <link rel="canonical" href="https://speed-reader.pro/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://speed-reader.pro/">
+    <meta property="og:title" content="Speed Reader — Read Faster on macOS">
+    <meta property="og:description" content="Speed reading app for macOS with RSVP technique, notch widget, and multi-format support. Read articles, books, and documents 2-5x faster.">
+    <meta property="og:image" content="https://speed-reader.pro/assets/images/og-image.png">
+    <meta property="og:site_name" content="Speed Reader">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@khlebobul">
+    <meta name="twitter:title" content="Speed Reader — Read Faster on macOS">
+    <meta name="twitter:description" content="Speed reading app for macOS with RSVP technique, notch widget, and multi-format support. Read articles, books, and documents 2-5x faster.">
+    <meta name="twitter:image" content="https://speed-reader.pro/assets/images/og-image.png">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#dc2820">
+    <meta name="application-name" content="Speed Reader">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Speed Reader",
+        "operatingSystem": "macOS 14+",
+        "applicationCategory": "UtilitiesApplication",
+        "description": "Speed reading app for macOS with RSVP technique, notch widget, and multi-format support. Read articles, books, and documents 2-5x faster.",
+        "offers": {
+            "@type": "Offer",
+            "price": "8.99",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "url": "https://speed-reader.pro/",
+        "screenshot": "https://speed-reader.pro/assets/images/main_window.jpeg"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    <!-- Preload demo videos -->
+    <link rel="preload" href="assets/demos/adjustable_speed.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="assets/demos/multi-format_support.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="assets/demos/url.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="assets/demos/area.mp4" as="video" type="video/mp4">
+    <link rel="preload" href="assets/demos/settings.mp4" as="video" type="video/mp4">
+
+    <!-- Preload mode images -->
+    <link rel="preload" href="assets/images/main_window.jpeg" as="image">
+    <link rel="preload" href="assets/images/notch_widget.jpeg" as="image">
+    <link rel="preload" href="assets/images/separate_window.jpeg" as="image">
+    </head>
+<body>
+
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo/logo.png" alt="Speed Reader" class="nav-logo-icon">
+                <span>Speed Reader</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#modes">Modes</a>
+                <a href="#formats">Formats</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- TODO: Replace with <a href="#pricing" class="btn btn-sm">Download</a> when app is released -->
+            <span class="btn btn-sm btn-disabled" title="The app is currently in development">Download</span>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Hero -->
+    <section class="hero">
+        <h1 class="hero-title">
+            Read <span class="hero-accent">2&ndash;5x</span> faster<br>
+            with zero effort
+        </h1>
+        <p class="hero-subtitle">
+            Speed Reader uses RSVP to show you one word at a time at your pace.
+            Articles, books, PDFs — anywhere on your Mac.
+        </p>
+        <div class="hero-cta">
+            <!-- TODO: Replace with <a href="#pricing" class="btn btn-lg">Download for macOS</a> when app is released -->
+            <span class="btn btn-lg btn-disabled" title="The app is currently in development">Download for macOS</span>
+            <span class="hero-req">The app is currently in development</span>
+        </div>
+
+        <!-- Hero visual: Speed comparison -->
+        <div class="hero-visual">
+            <div class="comparison-container">
+                <div class="comparison-side comparison-traditional">
+                    <div class="comparison-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>
+                        Traditional Reading
+                    </div>
+                    <div class="comparison-display comparison-text-display" id="comparison-traditional"></div>
+                    <div class="comparison-meta">
+                        <span class="comparison-wpm" id="traditional-wpm">~250 WPM</span>
+                        <span class="comparison-status" id="traditional-status"></span>
+                    </div>
+                </div>
+
+                <div class="comparison-vs">VS</div>
+
+                <div class="comparison-side comparison-rsvp">
+                    <div class="comparison-label comparison-label-accent">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        Speed Reader
+                    </div>
+                    <div class="comparison-display comparison-rsvp-display" id="comparison-rsvp">
+                        <div class="comparison-rsvp-text">
+                            <span id="comp-rsvp-pre"></span><span id="comp-rsvp-orp"></span><span id="comp-rsvp-post"></span>
+                        </div>
+                    </div>
+                    <div class="comparison-meta">
+                        <span class="comparison-wpm comparison-wpm-accent" id="rsvp-wpm">~450 WPM</span>
+                        <span class="comparison-status" id="rsvp-status"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-controls">
+                <button class="btn btn-lg comparison-btn" id="comparison-start">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Start Comparison
+                </button>
+                <div class="comparison-result" id="comparison-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Technique -->
+    <section class="rsvp-technique">
+        <div class="rsvp-technique-inner">
+            <div class="rsvp-technique-content">
+                <h2>The science behind speed reading</h2>
+                <p class="rsvp-technique-text">
+                    Speed Reader uses <strong>Rapid Serial Visual Presentation (RSVP)</strong> — a proven technique that displays text one word at a time at a fixed location. This eliminates eye movement between words, which typically accounts for 80% of reading time.
+                </p>
+                <p class="rsvp-technique-text">
+                    By focusing on a single point, your brain processes words faster without losing comprehension. The Optimal Recognition Point (ORP) guides your eye to the perfect letter in each word, maximizing reading efficiency.
+                </p>
+                <p class="rsvp-technique-medical">
+                    RSVP is especially helpful for people with central field loss or peripheral reading needs. If you need Speed Reader for medical reasons, <a href="mailto:support@speed-reader.pro">contact us</a> for a free license.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>Everything you need to read faster</h2>
+            <p class="section-subtitle">Designed for macOS. Built with native technologies. No Electron.</p>
+        </div>
+
+        <div class="features-list">
+            <div class="feature-item">
+                <div class="feature-item-content">
+                    <h3>Speed & ORP Control</h3>
+                    <p>From 100 to 1000 WPM with ORP highlighting — your eye lands on the perfect letter every time. Read naturally, read fast.</p>
+                    <ul class="feature-item-list">
+                        <li>Fine-tune speed in real-time with keyboard shortcuts</li>
+                        <li>Optimal Recognition Point guides eye fixation</li>
+                        <li>Reduces eye strain and fatigue</li>
+                    </ul>
+                </div>
+                <div class="feature-item-visual">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/demos/adjustable_speed.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="feature-item feature-item-reverse">
+                <div class="feature-item-content">
+                    <h3>Multi-Format Support</h3>
+                    <p>Read anything. PDF, EPUB, DOCX, Markdown, FB2, plain text, and more. Built-in OCR for images and scanned documents.</p>
+                    <ul class="feature-item-list">
+                        <li>Drag & drop file loading</li>
+                        <li>In-app document preview with word highlighting</li>
+                        <li>Smart text extraction even from complex layouts</li>
+                    </ul>
+                </div>
+                <div class="feature-item-visual">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/demos/multi-format_support.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-item-content">
+                    <h3>Read Any URL</h3>
+                    <p>Paste a link and read any article at your speed. Smart extraction pulls clean text from any webpage — no clutter, no ads.</p>
+                    <ul class="feature-item-list">
+                        <li>Automatic article extraction from web pages</li>
+                        <li>Handles paywalled and complex layouts</li>
+                        <li>Reading progress saved per URL</li>
+                    </ul>
+                </div>
+                <div class="feature-item-visual">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/demos/url.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="feature-item feature-item-reverse">
+                <div class="feature-item-content">
+                    <h3>Area Capture</h3>
+                    <p>Select any area on your screen and read it instantly. Built-in OCR recognizes text from any app, image, or document.</p>
+                    <ul class="feature-item-list">
+                        <li>Native macOS screen selection</li>
+                        <li>Vision framework OCR — fast and accurate</li>
+                        <li>Read text from any app without copy-paste</li>
+                    </ul>
+                </div>
+                <div class="feature-item-visual">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/demos/area.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-item-content">
+                    <h3>Customization</h3>
+                    <p>Make it yours. Adjust fonts, colors, ORP highlighting, themes, and reading mode to match your style.</p>
+                    <ul class="feature-item-list">
+                        <li>Font family, size, and ORP color presets</li>
+                        <li>Light and dark theme support</li>
+                        <li>Per-mode settings for notch, window, and panel</li>
+                    </ul>
+                </div>
+                <div class="feature-item-visual">
+                    <video autoplay loop muted playsinline>
+                        <source src="assets/demos/settings.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="feature-item feature-item-reverse">
+                <div class="feature-item-content">
+                    <h3>Menu Bar Access</h3>
+                    <p>Always one click away. Start reading from clipboard, open files, or capture screen — all from the menu bar.</p>
+                    <ul class="feature-item-list">
+                        <li>Quick access without switching windows</li>
+                        <li>Read clipboard content with one click</li>
+                        <li>Global keyboard shortcuts from any app</li>
+                    </ul>
+                </div>
+                <div class="feature-item-visual">
+                    <img src="assets/images/menu_bar.jpeg" alt="Menu Bar Access">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reading Modes -->
+    <section class="modes" id="modes">
+        <div class="section-header">
+            <h2>Three ways to read</h2>
+            <p class="section-subtitle">Choose the mode that fits your workflow</p>
+        </div>
+
+        <div class="modes-grid">
+            <div class="mode-card">
+                <div class="mode-visual">
+                    <img src="assets/images/main_window.jpeg" alt="Main Window mode" class="mode-image">
+                </div>
+                <h3>Main Window</h3>
+                <p>Full reading experience with text preview, word highlighting, playback controls, and progress tracking.</p>
+            </div>
+
+            <div class="mode-card">
+                <div class="mode-visual">
+                    <img src="assets/images/notch_widget.jpeg" alt="Notch Widget mode" class="mode-image">
+                </div>
+                <h3>Notch Widget</h3>
+                <p>Dynamic Island-style reader that wraps around your MacBook notch. Minimal, focused, always on top.</p>
+            </div>
+
+            <div class="mode-card">
+                <div class="mode-visual">
+                    <img src="assets/images/separate_window.jpeg" alt="Separate Window mode" class="mode-image">
+                </div>
+                <h3>Separate Window</h3>
+                <p>Floating glass panel. Always on top, adjustable opacity. Read while working in other apps.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formats -->
+    <section class="formats" id="formats">
+        <div class="section-header">
+            <h2>Read anything</h2>
+            <p class="section-subtitle">Drop a file, paste a URL, capture your screen, or just type</p>
+        </div>
+
+        <div class="formats-grid">
+            <div class="format-tag">PDF</div>
+            <div class="format-tag">EPUB</div>
+            <div class="format-tag">DOCX</div>
+            <div class="format-tag">Markdown</div>
+            <div class="format-tag">FB2</div>
+            <div class="format-tag">TXT</div>
+            <div class="format-tag">URLs</div>
+            <div class="format-tag format-tag-special">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                Images via OCR
+            </div>
+        </div>
+
+        <div class="formats-features">
+            <div class="format-feature">
+                <div class="format-feature-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+                </div>
+                <span>Word highlighting in document preview</span>
+            </div>
+            <div class="format-feature">
+                <div class="format-feature-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <span>Drag & drop file loading</span>
+            </div>
+            <div class="format-feature">
+                <div class="format-feature-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </div>
+                <span>Built-in OCR for scanned documents</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keyboard Shortcuts -->
+    <section class="shortcuts">
+        <div class="section-header">
+            <h2>Keyboard-first</h2>
+            <p class="section-subtitle">Full control without touching your mouse</p>
+        </div>
+
+        <div class="shortcuts-grid">
+            <div class="shortcut">
+                <kbd>Space</kbd>
+                <span>Play / Pause</span>
+            </div>
+            <div class="shortcut">
+                <kbd>&larr;</kbd> <kbd>&rarr;</kbd>
+                <span>Previous / Next word</span>
+            </div>
+            <div class="shortcut">
+                <kbd>&uarr;</kbd> <kbd>&darr;</kbd>
+                <span>Speed +/- 50 WPM</span>
+            </div>
+            <div class="shortcut">
+                <kbd>R</kbd>
+                <span>Restart</span>
+            </div>
+            <div class="shortcut">
+                <kbd>Esc</kbd>
+                <span>Close reader</span>
+            </div>
+            <div class="shortcut">
+                <kbd title="Command">&#8984;</kbd><kbd>&#8679;</kbd><kbd>A</kbd>
+                <span>Capture screen area</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <h2>Simple pricing</h2>
+            <p class="section-subtitle">One payment. Lifetime access. No subscriptions.</p>
+        </div>
+
+        <div class="pricing-container">
+            <div class="pricing-left">
+                <h3 class="pricing-title">Lifetime License</h3>
+                <p class="pricing-subtitle">One payment of <span class="pricing-highlight">$8.99</span>. Lifetime access to every update.</p>
+                <!-- TODO: Replace with <a href="#" class="btn btn-lg">Purchase License</a> when app is released -->
+                <span class="btn btn-lg btn-disabled" title="The app is currently in development">Coming Soon</span>
+            </div>
+
+            <div class="pricing-right">
+                <div class="pricing-amount">$8.99</div>
+                
+                <div class="pricing-medical">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    <div class="pricing-medical-content">
+                        <div class="pricing-medical-title">Medical accessibility</div>
+                        <div class="pricing-medical-text">
+                            If you need Speed Reader for medical reasons (central field loss, peripheral reading assistance, or other vision-related conditions), please <a href="mailto:support@speed-reader.pro">contact us</a> to receive a free license.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Get in touch</h2>
+            <p class="section-subtitle">Have questions? Want to share feedback? Reach out anytime.</p>
+        </div>
+
+        <div class="contact-grid">
+            <a href="mailto:khlebobul@gmail.com" class="contact-card">
+                <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                </div>
+                <div class="contact-content">
+                    <h3>Email</h3>
+                    <p>khlebobul@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://x.com/khlebobul" target="_blank" rel="noopener noreferrer" class="contact-card">
+                <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
+                        <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
+                    </svg>
+                </div>
+                <div class="contact-content">
+                    <h3>X (Twitter)</h3>
+                    <p>@khlebobul</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Browser Extension -->
+    <section class="extension">
+        <div class="extension-container">
+            <div class="extension-content">
+                <div class="extension-badge">Free Extension</div>
+                <h2>Speed Reader for Chrome</h2>
+                <p>Try Speed Reader right in your browser. Read any webpage with RSVP technique — completely free.</p>
+                <div class="extension-features">
+                    <div class="extension-feature">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>Works on any webpage</span>
+                    </div>
+                    <div class="extension-feature">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>Adjustable reading speed</span>
+                    </div>
+                    <div class="extension-feature">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span>100% free, no ads</span>
+                    </div>
+                </div>
+                <a href="https://chromewebstore.google.com/detail/speed-reader/iifbkjcdekfokhpjbiabfgjlloabpdlp" target="_blank" rel="noopener noreferrer" class="btn btn-lg extension-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <line x1="21.17" y1="8" x2="12" y2="8"/>
+                        <line x1="3.95" y1="6.06" x2="8.54" y2="14"/>
+                        <line x1="10.88" y1="21.94" x2="15.46" y2="14"/>
+                    </svg>
+                    Add to Chrome
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span>Speed Reader</span>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="https://github.com/khlebobul">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
